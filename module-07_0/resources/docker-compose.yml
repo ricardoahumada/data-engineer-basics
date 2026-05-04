@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  jupyter:
+    image: jupyter/pyspark-notebook:latest
+    container_name: spark_local
+    ports:
+      - "8888:8888"
+      - "4040:4040"
+    volumes:
+      - ./data:/home/jovyan/work/data
+      - ./output:/home/jovyan/work/output
+    environment:
+      - GRANT_SUDO=yes
+    command: start-notebook.sh --NotebookApp.password=''
