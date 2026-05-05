@@ -36,8 +36,8 @@
           "StorageClass": "GLACIER"
         },
         {
-          "Days": 180,
-          "StorageClass": "GLACIER_DEEP_ARCHIVE"
+          "Days": 210,
+          "StorageClass": "DEEP_ARCHIVE"
         }
       ],
       "Expiration": {
@@ -84,8 +84,8 @@
       },
       "Transitions": [
         {
-          "Days": 1,
-          "StorageClass": "GLACIER_DEEP_ARCHIVE"
+          "Days": 90,
+          "StorageClass": "DEEP_ARCHIVE"
         }
       ],
       "Expiration": {
@@ -95,7 +95,7 @@
     {
       "ID": "cleanup-incomplete-uploads",
       "Status": "Enabled",
-      "Filter": {},
+      "Filter": { "Prefix": "" },
       "AbortIncompleteMultipartUpload": {
         "DaysAfterInitiation": 7
       }
@@ -103,7 +103,7 @@
     {
       "ID": "expire-old-versions",
       "Status": "Enabled",
-      "Filter": {},
+      "Filter": { "Prefix": "" },
       "NoncurrentVersionTransitions": [
         {
           "NoncurrentDays": 30,
