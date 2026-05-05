@@ -1,0 +1,122 @@
+{
+  "Rules": [
+    {
+      "ID": "landing-zone-lifecycle",
+      "Status": "Enabled",
+      "Filter": {
+        "Prefix": "landing/"
+      },
+      "Transitions": [
+        {
+          "Days": 30,
+          "StorageClass": "STANDARD_IA"
+        },
+        {
+          "Days": 90,
+          "StorageClass": "GLACIER"
+        }
+      ],
+      "Expiration": {
+        "Days": 365
+      }
+    },
+    {
+      "ID": "raw-zone-lifecycle",
+      "Status": "Enabled",
+      "Filter": {
+        "Prefix": "raw/"
+      },
+      "Transitions": [
+        {
+          "Days": 60,
+          "StorageClass": "STANDARD_IA"
+        },
+        {
+          "Days": 120,
+          "StorageClass": "GLACIER"
+        },
+        {
+          "Days": 180,
+          "StorageClass": "GLACIER_DEEP_ARCHIVE"
+        }
+      ],
+      "Expiration": {
+        "Days": 730
+      }
+    },
+    {
+      "ID": "silver-zone-lifecycle",
+      "Status": "Enabled",
+      "Filter": {
+        "Prefix": "silver/"
+      },
+      "Transitions": [
+        {
+          "Days": 90,
+          "StorageClass": "GLACIER"
+        }
+      ],
+      "Expiration": {
+        "Days": 1095
+      }
+    },
+    {
+      "ID": "gold-zone-lifecycle",
+      "Status": "Enabled",
+      "Filter": {
+        "Prefix": "gold/"
+      },
+      "Transitions": [
+        {
+          "Days": 180,
+          "StorageClass": "GLACIER"
+        }
+      ],
+      "Expiration": {
+        "Days": 1825
+      }
+    },
+    {
+      "ID": "archive-zone-lifecycle",
+      "Status": "Enabled",
+      "Filter": {
+        "Prefix": "archive/"
+      },
+      "Transitions": [
+        {
+          "Days": 1,
+          "StorageClass": "GLACIER_DEEP_ARCHIVE"
+        }
+      ],
+      "Expiration": {
+        "Days": 3650
+      }
+    },
+    {
+      "ID": "cleanup-incomplete-uploads",
+      "Status": "Enabled",
+      "Filter": {},
+      "AbortIncompleteMultipartUpload": {
+        "DaysAfterInitiation": 7
+      }
+    },
+    {
+      "ID": "expire-old-versions",
+      "Status": "Enabled",
+      "Filter": {},
+      "NoncurrentVersionTransitions": [
+        {
+          "NoncurrentDays": 30,
+          "StorageClass": "STANDARD_IA"
+        },
+        {
+          "NoncurrentDays": 90,
+          "StorageClass": "GLACIER"
+        }
+      ],
+      "NoncurrentVersionExpiration": {
+        "NoncurrentDays": 365
+      }
+    }
+  ]
+}

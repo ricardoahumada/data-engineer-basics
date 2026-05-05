@@ -1,0 +1,5 @@
+id_contratista;nombre;tipo_contrato;clasificacion;pais
+CONT-001;Contratas Ferroviarias SA;MANTENIMIENTO;GENERAL;España
+CONT-002;Inspectrail SL;INSPECCION;ESPECIALIZADA;España
+CONT-003;Señales y Sistamas;CORRECTIVA;ESPECIALIZADA;España
+CONT-004;Electrificación Ferroviaria;PREVENTIVA;GENERAL;España

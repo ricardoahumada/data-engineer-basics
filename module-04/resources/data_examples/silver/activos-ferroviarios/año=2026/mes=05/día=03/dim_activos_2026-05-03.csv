@@ -1,0 +1,6 @@
+id_activo;tipo;descripcion;estado;fecha_puesta_servicio;region;zona;tramo
+ACT-VIA-042;VIA;Tramo Alta Velocidad Madrid-Seville;ACTIVO;2015-06-15;CENTRO;ZONA-N;TRAMO-MS
+ACT-EST-008;ESTACION;Estación Central Barcelona;ACTIVO;2010-03-20;CATALUÑA;ZONA-C;EST-CB
+ACT-SEN-015;Senalizacion;Señalización Cruce Valencia;ACTIVO;2018-09-01;VALENCIA;ZONA-S;CRUCE-VL
+ACT-CAT-003;CATENARIA;Catenaria Tramo Norte;ACTIVO;2012-11-30;CENTRO;ZONA-N;TRAMO-N
+ACT-VIA-018;VIA;Via Alternativa Norte;ACTIVO;2008-07-22;CENTRO;ZONA-N;VIA-ALT-N

@@ -1,0 +1,6 @@
+id_orden;id_activo;descripcion_activo;tipo_orden;prioridad;estado;coste;fecha_inicio;fecha_fin;contratista;fecha_extraccion
+ORD-20260503-001;ACT-VIA-042;Tramo Alta Velocidad Madrid-Seville;MANTENIMIENTO;ALTA;COMPLETADA;12500.00;2026-05-01;2026-05-03;Contratas Ferroviarias SA;2026-05-03T08:30:00
+ORD-20260503-002;ACT-EST-008;Estación Central Barcelona;INSPECCION;MEDIA;COMPLETADA;3200.00;2026-05-02;2026-05-03;Inspectrail SL;2026-05-03T08:30:00
+ORD-20260503-003;ACT-SEN-015;Señalización Cruce Valencia;CORRECTIVA;ALTA;EN_PROCESO;8900.00;2026-05-03;2026-05-05;Señales y Sistamas;2026-05-03T08:30:00
+ORD-20260503-004;ACT-CAT-003;Catenaria Tramo Norte;PREVENTIVA;BAJA;PROGRAMADA;4500.00;2026-05-10;2026-05-12;Electrificación Ferroviaria;2026-05-03T08:30:00
+ORD-20260503-005;ACT-VIA-018;Via Alternativa Norte;MANTENIMIENTO;MEDIA;COMPLETADA;7800.00;2026-05-02;2026-05-03;Contratas Ferroviarias SA;2026-05-03T08:30:00
